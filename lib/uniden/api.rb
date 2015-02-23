@@ -1,14 +1,14 @@
 require "uniden/api/version"
+require 'active_attr'
 
 module Uniden
-  class Api
+  module Api
     # Your code goes here...
     autoload :System,     'uniden/api/system'
     autoload :Group,      'uniden/api/group'
     autoload :Settings,   'uniden/api/settings'
-
-    def initialize
-    end
+    autoload :Scanner,    'uniden/api/scanner'
+    autoload :Site,       'uniden/api/site'
 
   end
 end
